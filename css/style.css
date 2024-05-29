@@ -30,6 +30,10 @@ body{
     font-size: 16px;
     font-family: 'poppins' , sans-serif;
 }
+.main-container{
+    width: 100%;
+    overflow: hidden;
+}
 ul{
     list-style: none;
 }
