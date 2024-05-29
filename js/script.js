@@ -1,46 +1,18 @@
-/** *********** .  Style toggle******** */
+/****************** typed  animation*/
 
-const styleSwitcherToggle   = document.querySelector(".style-switcher-toggler");
-styleSwitcherToggle.addEventListener('click', () =>{
-    document.querySelector(".style-switcher").classList.toggle('open');
+let typed = new Typed(".typing", {
+    strings:["Web Designer", "Web Developper", "Graphic Designer", "Buisness Man"],
+    typeSpeed:100,
+    backSpeed:60,
+    loop:true
 })
 
-/************** hide style scroll      ********$ */
 
-window.addEventListener('scroll', () =>{
-    if(document.querySelector(".style-switcher").classList.contains('open')){
-        document.querySelector(".style-switcher").classList.remove('open');
-    }
-})
+/****** Language */
 
-/**************  theme colors      ********$ */
-
-const alternateStyles = document.querySelectorAll(".alternate-style");
-
-    function setActiveStyle(color)
-    {
-        alternateStyles.forEach((style) =>
-            {
-            if(color === style.getAttribute("title")){
-                style.removeAttribute("disabled");
-            }else{
-                style.setAttribute("disabled", "true");
-            }
-        })
-    }
-    /************** light dark      ********$ */
-
-const dayNight = document.querySelector(".day-nigth");
-dayNight.addEventListener('click', () =>{
-    dayNight.querySelector("i").classList.toggle("fa-sun");
-    dayNight.querySelector("i").classList.toggle("fa-moon");
-    document.body.classList.toggle("dark");
-})
-
-window.addEventListener("load", () =>{
-    if(document.body.classList.contains("dark")){
-        dayNight.querySelector("i").classList.add("fa-sum")
-    }else{
-        dayNight.querySelector("i").classList.add("fa-moon")
-    }
-})
+function googleTranslateElementInit(){
+    new google.translate.TranslateElement(
+        {pageLanguage: 'en'},
+        'google_translate_element'
+    );
+}

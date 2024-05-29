@@ -47,6 +47,17 @@ ul{
     opacity: 1;
 
 }
+.google_translate_element{
+    position: absolute;
+    right: 100px;
+    display: flex;
+    justify-content: right;
+    border: 3px solid var(--skin-color);
+    margin: 20px;
+    padding: 10px;
+    color: var(--text-black-900);
+
+}
 .dark-shadow{
     box-shadow: 0 0 20px rgb(48, 46, 77, 0.15);
 }
@@ -214,6 +225,9 @@ ul{
     color: var(--text-black-900);
     padding: 5px 10px;
     font-weight: 600px;
+}
+.aside .nav li a:hover{
+    color: var(--skin-color);
 }
 .aside .nav li a.active{
     color: var(--skin-color);
