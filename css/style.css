@@ -17,6 +17,13 @@
 ::before, ::after{
     box-sizing: border-box;
 }
+body.dark{
+    --bg-black-900: #151515;
+    --bg-black-100: #222222;
+    --bg-black-50:#353336;
+    --text-black-900:#ffffff;
+    --text-black-700:#e9e9e9;
+}
 body{
   
     line-height: 1.5;
@@ -397,6 +404,11 @@ h3.my-profession{
     margin-top: 30px;
    
 }
+.about .about-content .education .tilte,
+.about .about-content .experience .tilte{
+    color: var(--text-black-900);
+    text-transform: uppercase;
+}
 .about .about-content .education .timeline-box{
     flex: 0 0 100%;
     max-width: 100%;
@@ -443,7 +455,7 @@ h3.my-profession{
 .about .about-content .timeline .timeline-date .fa{
     margin-right: 5px;
 }
-.about .about-content .timeline .timeline-title{
+ .timeline-title{
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
@@ -455,6 +467,9 @@ h3.my-profession{
     font-size: 16px;
     text-align: justify;
     color: var(--text-black-700);
+}
+.about .education h3 .tilte{
+    color: var(--text-black-900);
 }
 
 /* service start */
